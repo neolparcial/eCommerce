@@ -1,6 +1,6 @@
 <?php 
-
-echo password_hash("titinoelolo", PASSWORD_DEFAULT,["cost"=>12]);
+session_start();
+//echo password_hash("titinoelolo", PASSWORD_DEFAULT,["cost"=>12]);
 
 
  ?>
