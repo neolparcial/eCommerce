@@ -222,6 +222,18 @@ class User extends Model{
 
 	}
 
+	public function verifyPerson($idperson)
+	{
+
+		$sql = new Sql();
+
+		$results = $sql->select("SELECT * FROM tb_persons WHERE idperson = :idperson", array(
+			':idperson'=>$idperson
+		));
+
+		return $results[0];
+	}
+
 }
 
  ?>

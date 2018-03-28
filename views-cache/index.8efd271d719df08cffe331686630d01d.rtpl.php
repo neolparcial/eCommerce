@@ -1,10 +1,10 @@
 <?php if(!class_exists('Rain\Tpl')){exit;}?><!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
+<div class="content-wrapper" style="background-image: url('/res/site/img/background.jpg')">
 <!-- Content Header (Page header) -->
 <section class="content-header">
   <h1>
-    Page Header
-    <small>Optional description</small>
+  	<?php echo htmlspecialchars( $user, ENT_COMPAT, 'UTF-8', FALSE ); ?>
+    <small>Administrador</small>
   </h1>
   <ol class="breadcrumb">
     <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
